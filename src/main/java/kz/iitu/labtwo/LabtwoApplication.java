@@ -18,7 +18,6 @@ public class LabtwoApplication {
         Member member = userdao.createUser(new Member("Name", "Email"));
         System.out.println(member.toString());
         member.setMembership(new Gold());
-        System.out.println(member.toString());
         service.setConnection();
         service.getUsers();
     }
