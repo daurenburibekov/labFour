@@ -1,0 +1,44 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<beans xmlns="http://www.springframework.org/schema/beans"-->
+<!--       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"-->
+<!--        default-init-method="init"-->
+<!--        default-destroy-method="destroy">-->
+
+<!--    <bean id="userservice" class="kz.iitu.labtwo.UserService" scope="singleton" >-->
+<!--        <property name="dbUrl" value="jdbc:postgresql://localhost:5432/postgres"/>-->
+<!--        <property name="dbUsername" value="postgres"/>-->
+<!--        <property name="dbPassword" value="2103"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="client" class="kz.iitu.labtwo.Client" abstract="true" scope="singleton"/>-->
+<!--    <bean id="premium" class="kz.iitu.labtwo.Premium" parent="client" scope="singleton"/>-->
+<!--    <bean id="gold" class="kz.iitu.labtwo.Gold" parent="client" scope="singleton"/>-->
+<!--    <bean id="silver" class="kz.iitu.labtwo.Silver" parent="client" scope="singleton"/>-->
+<!--    <bean id="customer" class="kz.iitu.labtwo.Customer" parent="client" scope="singleton"/>-->
+
+<!--    <bean id="thing" class="kz.iitu.labtwo.Thing" abstract="true" scope="prototype"/>-->
+<!--    <bean id="product" class="kz.iitu.labtwo.Product" scope="prototype">-->
+<!--        <property name="name" value="Тушь"/>-->
+<!--        <property name="price" value="60"/>-->
+<!--    </bean>-->
+<!--    <bean id="service" class="kz.iitu.labtwo.Service" scope="prototype">-->
+<!--        <property name="name" value="Маникюр"/>-->
+<!--        <property name="price" value="50"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="shop" class="kz.iitu.labtwo.Shop" scope="singleton">-->
+<!--        <property name="things">-->
+<!--            <list value-type="kz.iitu.labtwo.Thing">-->
+<!--                <ref bean="product"/>-->
+<!--                <ref bean="service"/>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+<!--    <bean id="member" class="kz.iitu.labtwo.Member" scope="prototype">-->
+<!--        <constructor-arg index="0" value="Dauren"/>-->
+<!--        <constructor-arg index="1" value="dauren@gmai.com"/>-->
+<!--        <constructor-arg index="2" ref="premium"/>-->
+<!--    </bean>-->
+<!--</beans>-->
