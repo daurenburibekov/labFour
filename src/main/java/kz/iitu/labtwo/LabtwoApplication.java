@@ -12,9 +12,7 @@ import java.sql.SQLException;
 public class LabtwoApplication {
 
     public static void main(String[] args) throws SQLException {
-        //lolbek new git
-        //lolbek new git
-        //lolbek new git
+        //git finally completed
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConfigration.class);
         UserService service = context.getBean("userService", UserService.class);
         UserDAO userdao = context.getBean("userDAO", UserDAO.class);
