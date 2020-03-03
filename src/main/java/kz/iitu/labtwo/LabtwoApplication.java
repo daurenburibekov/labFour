@@ -12,6 +12,7 @@ import java.sql.SQLException;
 public class LabtwoApplication {
 
     public static void main(String[] args) throws SQLException {
+        //lolbek new git
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConfigration.class);
         UserService service = context.getBean("userService", UserService.class);
         UserDAO userdao = context.getBean("userDAO", UserDAO.class);
